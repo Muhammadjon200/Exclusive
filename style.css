@@ -234,6 +234,7 @@ main .card_main .card_hight .father_card {
   height: 420px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 main .card_main .card_hight .father_card .card_container1 .card_father {
   position: relative;
@@ -243,6 +244,7 @@ main .card_main .card_hight .father_card .card_container1 .card_father {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 10px;
 }
 main .card_main .card_hight .father_card .card_container1 .card_father img {
   position: absolute;
@@ -263,6 +265,7 @@ main .card_main .card_hight .father_card .card_container1 .card_father .card_on 
   height: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 10px 10px;
 }
 main .card_main .card_hight .father_card .card_container1 .card_father .add_to_card_btn {
   width: 100%;
@@ -282,6 +285,13 @@ main .card_main .card_hight .father_card .card_container2 {
   justify-content: space-between;
   width: 100%;
   height: 100px;
+}
+main .card_main .card_hight .father_card .card_container2 h1 {
+  font-weight: 300;
+}
+main .card_main .card_hight .father_card .card_container2 p {
+  font-size: 30px;
+  color: var(--light-red);
 }
 
 @media (max-width: 1500px) {

@@ -275,6 +275,7 @@ main {
                 height: 420px;
                 display: flex;
                 flex-direction: column;
+                border-radius: 10px;
 
                 .card_container1 {
                     .card_father {
@@ -285,6 +286,7 @@ main {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        border-radius: 10px;
 
                         img {
                             position: absolute;
@@ -305,6 +307,7 @@ main {
                                 height: 100%;
                                 display: flex;
                                 flex-direction: column;
+                                border-radius: 0 0 10px 10px;
 
                             }
                         }
@@ -331,6 +334,15 @@ main {
                     justify-content: space-between;
                     width: 100%;
                     height: 100px;
+
+                    h1 {
+                        font-weight: 300;
+                    }
+
+                    p {
+                        font-size: 30px;
+                        color: var(--light-red);
+                    }
                 }
             }
         }
