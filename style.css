@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--white);
+}
+
 header {
   width: 100%;
   height: 100px;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +37,7 @@ header .head .head_elemnt {
 header .head .head_elemnt a {
   transition: all 0.3s ease;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-size: 26px;
   position: relative;
 }
@@ -44,7 +48,7 @@ header .head .head_elemnt a:after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--black);
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
@@ -59,7 +63,7 @@ header .head .head_elemnt a::before {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--black);
   transform: scaleX(0);
   transform-origin: left;
   transition: all 0.5s;
@@ -76,7 +80,7 @@ header .head .head_content {
 header .head .head_content .head_input {
   width: 245px;
   height: 100%;
-  background-color: #F5F5F5;
+  background-color: var(--light-gray);
   display: flex;
   align-items: center;
   position: relative;
@@ -87,12 +91,12 @@ header .head .head_content .head_input input {
   width: 100%;
   outline: none;
   border: none;
-  background-color: #F5F5F5;
+  background-color: var(--light-gray);
   cursor: pointer;
 }
 header .head .head_content .head_input .bx {
   transition: all 0.3s ease;
-  background-color: #F5F5F5;
+  background-color: var(--light-gray);
   font-size: 30px;
   position: absolute;
   margin-left: 180px;
@@ -107,7 +111,7 @@ header .head .head_content .head_like .bx {
 }
 header .head .head_content .head_like span {
   position: absolute;
-  background-color: red;
+  background-color: var(--red);
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -120,7 +124,7 @@ header .head .head_content .head_like span {
 }
 header .head .head_content .head_like span p {
   font-size: 25px;
-  color: white;
+  color: var(--white);
 }
 header .head .head_content .head_shop_beag {
   font-size: 30px;
@@ -147,7 +151,7 @@ header .head .nav_open_btn {
 header .head .nav_open_btn .line {
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: var(--black);
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
@@ -166,6 +170,111 @@ header .head .nav_open_btn .line_3 {
   100% {
     transform: scaleX(0.5);
   }
+}
+
+:root {
+  --black: #000;
+  --red: red;
+  --gold-crayola: hsl(38, 61%, 73%);
+  --light-red: #DB4444;
+  --light-green: #00FF66;
+  --light-gray: #F5F5F5;
+  --white: white;
+}
+
+main {
+  width: 80%;
+  height: auto;
+  margin: 100px auto;
+}
+main .wisit_text_btn {
+  width: 100%;
+  height: 100px;
+  border: 1px solid var(--gold-crayola);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .wisit_text_btn .wisit_l h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+main .wisit_text_btn .wisit_r .wisit_r_btn {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  background: none;
+  border: none;
+  border: 1px solid var(--black);
+  cursor: pointer;
+  font-size: 20px;
+}
+main .card_main {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--gold-crayola);
+  margin: auto;
+}
+main .card_main .card_hight {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-column: 4/14;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+main .card_main .card_hight .father_card {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+main .card_main .card_hight .father_card .card_father {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .card_main .card_hight .father_card .card_father img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  padding: 90px;
+}
+main .card_main .card_hight .father_card .card_father .card_on {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .card_main .card_hight .father_card .card_father .card_on delet_btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .card_main .card_hight .father_card .card_father .add_to_card_btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+}
+main .card_main .card_hight .father_card .card_father .add_to_card_btn .uil {
+  color: var(--white);
+  font-size: 20px;
 }
 
 @media (max-width: 1500px) {
