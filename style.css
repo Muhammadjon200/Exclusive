@@ -214,7 +214,7 @@ main .wisit_text_btn .wisit_r .wisit_r_btn {
 }
 main .card_main {
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -231,11 +231,11 @@ main .card_main .card_hight {
 }
 main .card_main .card_hight .father_card {
   width: 100%;
-  height: 400px;
+  height: 420px;
   display: flex;
   flex-direction: column;
 }
-main .card_main .card_hight .father_card .card_father {
+main .card_main .card_hight .father_card .card_container1 .card_father {
   position: relative;
   width: 100%;
   height: 340px;
@@ -244,27 +244,27 @@ main .card_main .card_hight .father_card .card_father {
   flex-direction: column;
   justify-content: space-between;
 }
-main .card_main .card_hight .father_card .card_father img {
+main .card_main .card_hight .father_card .card_container1 .card_father img {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
   padding: 90px;
 }
-main .card_main .card_hight .father_card .card_father .card_on {
+main .card_main .card_hight .father_card .card_container1 .card_father .card_on {
   width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-main .card_main .card_hight .father_card .card_father .card_on delet_btn {
+main .card_main .card_hight .father_card .card_container1 .card_father .card_on delet_btn {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-main .card_main .card_hight .father_card .card_father .add_to_card_btn {
+main .card_main .card_hight .father_card .card_container1 .card_father .add_to_card_btn {
   width: 100%;
   height: 50px;
   display: flex;
@@ -272,9 +272,16 @@ main .card_main .card_hight .father_card .card_father .add_to_card_btn {
   justify-content: center;
   background-color: var(--black);
 }
-main .card_main .card_hight .father_card .card_father .add_to_card_btn .uil {
+main .card_main .card_hight .father_card .card_container1 .card_father .add_to_card_btn .uil {
   color: var(--white);
   font-size: 20px;
+}
+main .card_main .card_hight .father_card .card_container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
 }
 
 @media (max-width: 1500px) {

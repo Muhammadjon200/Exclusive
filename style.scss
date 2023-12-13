@@ -220,6 +220,7 @@ main {
     width: 80%;
     height: auto;
     margin: 100px auto;
+
     .wisit_text_btn {
         width: 100%;
         height: 100px;
@@ -254,7 +255,7 @@ main {
 
     .card_main {
         width: 100%;
-        height: 500px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -271,57 +272,72 @@ main {
 
             .father_card {
                 width: 100%;
-                height: 400px;
+                height: 420px;
                 display: flex;
                 flex-direction: column;
 
-                .card_father {
-                    position: relative;
-                    width: 100%;
-                    height: 340px;
-                    background-color: var(--light-gray);
+                .card_container1 {
+                    .card_father {
+                        position: relative;
+                        width: 100%;
+                        height: 340px;
+                        background-color: var(--light-gray);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        img {
+                            position: absolute;
+                            object-fit: cover;
+                            background-size: cover;
+                            padding: 90px;
+                        }
+
+                        .card_on {
+                            width: 100%;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+
+                            delet_btn {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+
+                            }
+                        }
+
+                        .add_to_card_btn {
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: var(--black);
+
+                            .uil {
+                                color: var(--white);
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .card_container2 {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    img {
-                        position: absolute;
-                        object-fit: cover;
-                        background-size: cover;
-                        padding: 90px;
-                    } 
-                    .card_on {
-                        width: 100%;
-                        height: 40px;
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-    
-                        delet_btn {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-    
-                        }
-                    }
-    
-                    .add_to_card_btn {
-                        width: 100%;
-                        height: 50px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: var(--black);
-                        .uil {
-                            color: var(--white);
-                            font-size: 20px;
-                        }
-                    }
+                    width: 100%;
+                    height: 100px;
                 }
             }
         }
     }
 }
+
+
 
 @media (max-width: 1500px) {
 
