@@ -80,7 +80,7 @@ header .head .head_content {
 header .head .head_content .head_input {
   width: 245px;
   height: 100%;
-  background-color: var(--light-gray);
+  background-color: var(--light-grey);
   display: flex;
   align-items: center;
   position: relative;
@@ -91,12 +91,12 @@ header .head .head_content .head_input input {
   width: 100%;
   outline: none;
   border: none;
-  background-color: var(--light-gray);
+  background-color: var(--light-grey);
   cursor: pointer;
 }
 header .head .head_content .head_input .bx {
   transition: all 0.3s ease;
-  background-color: var(--light-gray);
+  background-color: var(--light-grey);
   font-size: 30px;
   position: absolute;
   margin-left: 180px;
@@ -178,120 +178,190 @@ header .head .nav_open_btn .line_3 {
   --gold-crayola: hsl(38, 61%, 73%);
   --light-red: #DB4444;
   --light-green: #00FF66;
-  --light-gray: #F5F5F5;
+  --light-grey: #F5F5F5;
   --white: white;
+  --grey: grey;
 }
 
 main {
-  width: 80%;
-  height: auto;
-  margin: 100px auto;
+  margin-top: 100px;
 }
-main .wisit_text_btn {
-  width: 100%;
+main .head_text {
+  top: 100px;
+  width: 80%;
   height: 100px;
-  border: 1px solid var(--gold-crayola);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin: auto;
 }
-main .wisit_text_btn .wisit_l h1 {
+main .head_text h1 {
   font-size: 30px;
-  font-weight: 400;
+  color: var(--black);
+  font-weight: 200;
 }
-main .wisit_text_btn .wisit_r .wisit_r_btn {
-  width: 200px;
-  height: 70px;
+main .head_text h1 span {
+  color: var(--grey);
+}
+main .buy_container {
+  width: 80%;
+  height: auto;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.05);
+}
+main .buy_container .head_container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.05);
+}
+main .buy_container .head_container .head_container_p {
+  width: 24%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+main .buy_container .head_container .head_container_p h1 {
+  font-size: 30px;
+  font-weight: 370;
+}
+main .buy_container .head_container .head_container_p_l {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--black);
-  background: none;
-  border: none;
-  border: 1px solid var(--black);
-  cursor: pointer;
-  font-size: 20px;
 }
-main .card_main {
+main .buy_container .container_main_poduct {
   width: 100%;
-  height: 600px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--gold-crayola);
-  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.05);
 }
-main .card_main .card_hight {
-  width: 100%;
-  height: 400px;
-  display: grid;
-  grid-column: 4/14;
-  grid-template-columns: repeat(4, auto);
-  gap: 20px;
-}
-main .card_main .card_hight .father_card {
-  width: 100%;
-  height: 420px;
+main .buy_container .container_main_poduct .abaut_product {
+  width: 24%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-}
-main .card_main .card_hight .father_card .card_container1 .card_father {
+  align-items: center;
+  justify-content: start;
   position: relative;
-  width: 100%;
-  height: 340px;
-  background-color: var(--light-gray);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 10px;
 }
-main .card_main .card_hight .father_card .card_container1 .card_father img {
-  position: absolute;
+main .buy_container .container_main_poduct .abaut_product h1 {
+  font-size: 20px;
+  font-weight: 300;
+}
+main .buy_container .container_main_poduct .abaut_product img {
+  width: 100px;
+  height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-  padding: 90px;
+  background-position: center;
 }
-main .card_main .card_hight .father_card .card_container1 .card_father .card_on {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-main .card_main .card_hight .father_card .card_container1 .card_father .card_on delet_btn {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0 0 10px 10px;
-}
-main .card_main .card_hight .father_card .card_container1 .card_father .add_to_card_btn {
-  width: 100%;
-  height: 50px;
+main .buy_container .container_main_poduct .abaut_product .delet_product {
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  color: var(--white);
+  background-color: var(--light-red);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--black);
 }
-main .card_main .card_hight .father_card .card_container1 .card_father .add_to_card_btn .uil {
-  color: var(--white);
-  font-size: 20px;
-}
-main .card_main .card_hight .father_card .card_container2 {
+main .buy_container .container_main_poduct .main_produc_con {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
-main .card_main .card_hight .father_card .card_container2 h1 {
+main .buy_container .container_main_poduct .main_produc_con h1 {
+  font-size: 20px;
   font-weight: 300;
 }
-main .card_main .card_hight .father_card .card_container2 p {
+main .buy_container .container_main_poduct .main_produc_con input {
+  width: 100px;
+  height: 60px;
+}
+main .buy_container .container_main_poduct .abaut_product_2 {
+  display: flex;
+  gap: 25px;
+}
+main .element_btn {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+main .element_btn .shopBlog_btn {
+  width: 300px;
+  height: 100%;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .element_btn .shopBlog_btn h1 {
   font-size: 30px;
-  color: var(--light-red);
+  font-weight: 300;
+}
+main .total_main {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 70px auto;
+}
+main .total_main .promoCode_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 25px;
+}
+main .total_main .promoCode_container input {
+  width: 400px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid var(--black);
+  font-size: 20px;
+}
+main .total_main .promoCode_container .cupon_btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: var(--light-red);
+  color: var(--light-grey);
+  border: none;
+  cursor: pointer;
+}
+main .total_main .promoCode_container .cupon_btn h1 {
+  font-size: 20px;
+}
+main .total_main .allTotal_container {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  top: 0;
+}
+main .total_main .allTotal_container .in_total {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid vr(--black);
 }
 
 @media (max-width: 1500px) {
