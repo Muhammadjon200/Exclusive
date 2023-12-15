@@ -184,7 +184,7 @@ header .head .nav_open_btn .line_3 {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 main .head_text {
   top: 100px;
@@ -288,7 +288,8 @@ main .buy_container .container_main_poduct .main_produc_con h1 {
 }
 main .buy_container .container_main_poduct .main_produc_con input {
   width: 100px;
-  height: 60px;
+  height: 50px;
+  border-radius: 8px;
 }
 main .buy_container .container_main_poduct .abaut_product_2 {
   display: flex;
@@ -311,6 +312,7 @@ main .element_btn .shopBlog_btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 main .element_btn .shopBlog_btn h1 {
   font-size: 30px;
@@ -361,7 +363,49 @@ main .total_main .allTotal_container .in_total {
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid vr(--black);
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+main .total_main .allTotal_container .in_total .in_in_total {
+  width: 90%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .total_main .allTotal_container .in_total .in_in_total .total_flex {
+  display: flex;
+  justify-content: space-between;
+}
+main .total_main .allTotal_container .in_total .in_in_total .bottom {
+  border-bottom: 1px solid var(--black);
+}
+main .total_main .allTotal_container .in_total .in_in_total .chekout_btn {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .total_main .allTotal_container .in_total .in_in_total .chekout_btn .prosees_btn {
+  width: 300px;
+  height: 70px;
+  background-color: var(--light-red);
+  font-size: 30px;
+  color: var(--light-grey);
+  border-radius: 10px;
+  border: none;
+}
+main .total_main .allTotal_container .in_total .in_in_total .text_size h1 {
+  font-size: 25px;
+  font-weight: 300;
+}
+main .total_main .allTotal_container .in_total .in_in_total .text_size h2 {
+  font-weight: 300;
 }
 
 @media (max-width: 1500px) {
@@ -531,6 +575,43 @@ main .total_main .allTotal_container .in_total {
   header .head .nav_open_btn {
     display: flex;
   }
+  main {
+    top: 0px;
+  }
+  main .element_btn .shopBlog_btn {
+    width: 250px;
+    height: 70%;
+  }
+  main .element_btn .shopBlog_btn h1 {
+    font-size: 25px;
+  }
+  main .total_main {
+    flex-direction: column;
+    gap: 25px;
+  }
+  main .total_main .promoCode_container {
+    width: 100%;
+  }
+  main .total_main .promoCode_container .cupon_btn h1 {
+    font-size: 18px;
+  }
+  main .total_main .allTotal_container {
+    width: 100%;
+  }
+  main .total_main .allTotal_container .in_total {
+    width: 100%;
+  }
+  main .total_main .allTotal_container .in_total .in_in_total .chekout_btn .prosees_btn {
+    font-size: 18px;
+  }
+  main .total_main .allTotal_container .in_total .in_in_total .text_size h1 {
+    font-size: 23px;
+    font-weight: 300;
+  }
+  main .total_main .allTotal_container .in_total .in_in_total .text_size h2 {
+    font-size: 23px;
+    font-weight: 300;
+  }
 }
 @media (max-width: 768px) {
   header .head .head_logo h1 {
@@ -559,6 +640,44 @@ main .total_main .allTotal_container .in_total {
   }
   header .head .nav_open_btn {
     display: flex;
+  }
+  main {
+    top: 0px;
+  }
+  main .element_btn .shopBlog_btn {
+    width: 150px;
+    height: 70%;
+  }
+  main .element_btn .shopBlog_btn h1 {
+    font-size: 20px;
+  }
+  main .total_main {
+    flex-direction: column;
+    gap: 25px;
+  }
+  main .total_main .promoCode_container {
+    width: 100%;
+  }
+  main .total_main .promoCode_container .cupon_btn h1 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  main .total_main .allTotal_container {
+    width: 100%;
+  }
+  main .total_main .allTotal_container .in_total {
+    width: 100%;
+  }
+  main .total_main .allTotal_container .in_total .in_in_total .chekout_btn .prosees_btn {
+    font-size: 18px;
+  }
+  main .total_main .allTotal_container .in_total .in_in_total .text_size h1 {
+    font-size: 23px;
+    font-weight: 300;
+  }
+  main .total_main .allTotal_container .in_total .in_in_total .text_size h2 {
+    font-size: 23px;
+    font-weight: 300;
   }
 }
 @media (max-width: 576px) {

@@ -217,7 +217,7 @@ header {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 70px;
 
     .head_text {
         top: 100px;
@@ -336,11 +336,12 @@ main {
 
                 input {
                     width: 100px;
-                    height: 60px;
+                    height: 50px;
+                    border-radius: 8px;
                 }
             }
 
-            .abaut_product_2{
+            .abaut_product_2 {
                 display: flex;
                 gap: 25px;
             }
@@ -353,6 +354,7 @@ main {
         display: flex;
         justify-content: space-between;
         margin: 50px auto;
+
         .shopBlog_btn {
             width: 300px;
             height: 100%;
@@ -360,8 +362,11 @@ main {
             border: none;
             border-radius: 10px;
             border: 1px solid var(--black);
-            display: flex;align-items: center;
+            display: flex;
+            align-items: center;
             justify-content: center;
+            cursor: pointer;
+
             h1 {
                 font-size: 30px;
                 font-weight: 300;
@@ -374,11 +379,13 @@ main {
         height: auto;
         display: flex;
         margin: 70px auto;
+
         .promoCode_container {
             width: 50%;
             height: 100%;
             display: flex;
             gap: 25px;
+
             input {
                 width: 400px;
                 height: 70px;
@@ -387,6 +394,7 @@ main {
                 border: 1px solid var(--black);
                 font-size: 20px;
             }
+
             .cupon_btn {
                 width: 200px;
                 height: 70px;
@@ -395,25 +403,78 @@ main {
                 color: var(--light-grey);
                 border: none;
                 cursor: pointer;
+
                 h1 {
                     font-size: 20px;
                 }
             }
         }
-        .allTotal_container{
+
+        .allTotal_container {
             width: 50%;
             height: 400px;
             display: flex;
             align-items: center;
             justify-content: end;
             top: 0;
-            
+
             .in_total {
                 width: 80%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                border: 1px solid vr(--black);
+                border: 1px solid var(--black);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+
+                .in_in_total {
+                    width: 90%;
+                    height: 80%;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .total_flex {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .bottom {
+                        border-bottom: 1px solid var(--black);
+                    }
+
+                    .chekout_btn {
+                        width: 90%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .prosees_btn {
+                            width: 300px;
+                            height: 70px;
+                            background-color: var(--light-red);
+                            font-size: 30px;
+                            color: var(--light-grey);
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+
+                    .text_size {
+                        h1 {
+                            font-size: 25px;
+                            font-weight: 300;
+                        }
+
+                        h2 {
+                            font-weight: 300;
+                        }
+                    }
+                }
 
             }
         }
@@ -692,6 +753,65 @@ main {
 
     }
 
+    main {
+        top: 0px;
+
+        .element_btn {
+
+            .shopBlog_btn {
+                width: 250px;
+                height: 70%;
+
+                h1 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .total_main {
+            flex-direction: column;
+            gap: 25px;
+
+            .promoCode_container {
+                width: 100%;
+
+                .cupon_btn {
+                    h1 {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .allTotal_container {
+                width: 100%;
+
+                .in_total {
+                    width: 100%;
+
+                    .in_in_total {
+                        .chekout_btn {
+                            .prosees_btn {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .text_size {
+                            h1 {
+                                font-size: 23px;
+                                font-weight: 300;
+                            }
+
+                            h2 {
+                                font-size: 23px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 
 }
 
@@ -743,6 +863,67 @@ main {
             }
         }
 
+    }
+
+        main {
+        top: 0px;
+
+        .element_btn {
+
+            .shopBlog_btn {
+                width: 150px;
+                height: 70%;
+
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .total_main {
+            flex-direction: column;
+            gap: 25px;
+
+            .promoCode_container {
+                width: 100%;
+
+                .cupon_btn {
+                    h1 {
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .allTotal_container {
+                width: 100%;
+
+                .in_total {
+                    width: 100%;
+
+                    .in_in_total {
+                        .chekout_btn {
+                            .prosees_btn {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .text_size {
+                            h1 {
+                                font-size: 23px;
+                                font-weight: 300;
+                            }
+
+                            h2 {
+                                font-size: 23px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
     }
 
 }

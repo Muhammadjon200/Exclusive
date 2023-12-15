@@ -186,7 +186,7 @@ header .head .nav_open_btn .line_3 {
 main {
   width: 80%;
   height: auto;
-  margin: 100px auto;
+  margin: 70px auto;
 }
 main .wisit_text_btn {
   width: 100%;
@@ -311,6 +311,7 @@ main .wisit_text_btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 50px;
 }
 main .wisit_text_btn .wisit_l {
   display: flex;
@@ -322,12 +323,14 @@ main .wisit_text_btn .wisit_l .mini_box {
   width: 40px;
   height: 80px;
   background-color: var(--light-red);
+  border-radius: 8px;
 }
 main .wisit_text_btn .wisit_l h1 {
   font-size: 30px;
   font-weight: 400;
 }
 main .just_for_you {
+  top: 50px;
   width: 100%;
   height: 600px;
   display: flex;
